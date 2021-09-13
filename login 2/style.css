@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(252, 103, 3));
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+.form h2{
+    justify-items: center;
+    color: aliceblue;
+    height: 40px;
+}
+.form p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form input,select{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form input[type=email] , .form input[type=password]{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    display: 16px;
+    color: white;
+}
+::placeholder{
+    color: whitesmoke;
+}
+
+.form input[type=submit] , .form input[type=reset]{
+    border: none;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(4, 0, 0);
+    width: 25%;
+}
+input[type=email]:valid, input[type=password]:valid{
+    background-color: green;
+}
+/*input[type=email]:invalid, input[type=password]:invalid{
+    background-color: red;
+}*/
